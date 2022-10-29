@@ -1,3 +1,8 @@
+/*File name: Midterm
+Student’s Name: Alley Chaggar
+StudentID: 301194572 
+Date: 2022-10-29*/
+
 // moddules for node and express
 let createError = require('http-errors');
 let express = require('express');

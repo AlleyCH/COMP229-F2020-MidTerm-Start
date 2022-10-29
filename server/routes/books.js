@@ -1,3 +1,8 @@
+/*File name: Midterm
+Student’s Name: Alley Chaggar
+StudentID: 301194572 
+Date: 2022-10-29*/
+
 // modules required for routing
 let express = require('express');
 let router = express.Router();
@@ -33,11 +38,11 @@ router.get('/add', (req, res, next) => {
 /* POST Route for processing the Add page - CREATE Operation */
 router.post('/add', (req, res, next) => {
   let newBook = book({
-      "Title": console.log(req.body.Title),
-      "Price": req.body.Price,
-      "Author": req.body.Author,
-      "Genre": req.body.Genre,
-      "Description": req.body.Description,
+       Title: req.body.Title,
+       Price: req.body.Price,
+       Author: req.body.Author,
+       Genre: req.body.Genre,
+       Description: req.body.Description,
   });
 
   book.create(newBook, (err, book) =>{
@@ -60,6 +65,7 @@ router.get("/:id", (req, res, next) => {
    * ADD CODE HERE *
    *****************/
   let id = req.params.id;
+  
   book.findById(id, (err, bookToEdit) => {
     if (err) res.end(err);
     else {
@@ -79,11 +85,11 @@ router.post("/:id", (req, res, next) => {
   let id = req.params.id;
 
   let updatedBook = book({
-    "Title": req.body.Title,
-    "Price": req.body.Price,
-    "Author": req.body.Author,
-    "Genre": req.body.Genre,
-    "Description": req.body.Description,
+    Title: console.log(req.body.Title),
+    Price: req.body.Price,
+    Author: req.body.Author,
+    Genre: req.body.Genre,
+    Description: req.body.Description,
   });
 
   book.updateOne({_id: id}, updatedBook, (err) => {

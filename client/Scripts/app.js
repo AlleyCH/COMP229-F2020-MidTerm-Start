@@ -1,3 +1,8 @@
+/*File name: Midterm
+Student’s Name: Alley Chaggar
+StudentID: 301194572 
+Date: 2022-10-29*/
+
 /* custom JS goes here */
 
 /* pagination code from http://www.bootply.com/lxa0FF9yhw */
